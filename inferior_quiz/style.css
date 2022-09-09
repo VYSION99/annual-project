@@ -1,0 +1,45 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-position: center;
+    background-color: aquamarine;
+    background-size: cover;
+}
+.main-content{
+    display: grid;
+    place-content: center;
+    margin: 10rem 15rem;
+    background-color: aliceblue;
+    padding: 3rem 2rem;
+    box-shadow: inset 6px 4px rgba(0,0, 0.9,0.5),
+                inset 12px 8px rgba(0,0, 0.9,0.2);
+    border: none;
+    outline: none;
+    border-radius: 5vh;
+}
+.inner_page ul{
+display: grid;
+place-content: left space-between;
+flex-direction: column;
+margin-left :5px ;
+list-style: none;
+}
+.inner_page ul li h2  {
+margin: 10px;
+
+}
+.inner_page ul li input  {
+margin: 10px;
+
+}
+.inner_page .submit{
+    float: right;
+    padding: 4px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 6px 4px rgba(0,0, 0.9,0.2);
+}
