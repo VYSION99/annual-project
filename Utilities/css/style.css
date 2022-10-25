@@ -12,7 +12,7 @@ body{
 .main-content{
     display: grid;
     place-content: center;
-    margin: 8rem 2rem;
+    margin: 7rem 2rem ;
     background-color: aliceblue;
     padding: 3rem 2rem;
     box-shadow: inset 6px 4px rgba(0,0, 0.9,0.5),
@@ -20,6 +20,8 @@ body{
     border: none;
     outline: none;
     border-radius: 5vh;
+    width: 85%;
+
 }
 .inner_page ul{
 display: grid;
@@ -85,4 +87,11 @@ margin: 10px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+}
+.scx{
+margin-top: 3rem;
+margin-left: 5rem;
+width:10% !important;
+
+
 }

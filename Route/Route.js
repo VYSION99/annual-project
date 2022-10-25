@@ -6,8 +6,8 @@ Router.get('/questions_field_resultScores', (req, res, next) => {
   res.render('result')
 })
 
-Router.get('/questionPortal', (req, res, next) => {
-    res.render('Ques',{layout:'QuesData'});
+Router.get('/questionPortal/mathematics', (req, res, next) => {
+    res.render('Ques',{layout:'Maths'});
 })
 
 

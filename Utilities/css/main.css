@@ -1,0 +1,28 @@
+ *,*::after,*::before{
+    margin: 10;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-position: center;
+    background-color: #7fffd4;
+    background-size: cover;
+   overflow-x: hidden;
+   width: 100%;
+}
+
+.home_container{
+  margin-right: auto;
+  margin-top: 4rem ;
+ 
+}
+.card_position{
+    display: grip; place-content: center; margin-top: 2vh !important;
+    margin-left: calc(var(--bs-gutter-x)*-2.5) !important;
+}
+.card_des{
+    padding: 3vh;
+     border-radius:5vh;
+  box-shadow: inset 12px 8px rgba(25,0, 0.9,0.5),
+          inset -4px -8px  12px rgba(25, 0,0.9, 0.1);
+}

@@ -16,7 +16,7 @@ app.use( express.json());
 app.use(express.urlencoded({ extended:true}));
 
 // static folder
-app.use(express.static(path.join(__dirname, "Math Sci Quiz")));
+app.use(express.static(path.join(__dirname, "Utilities")));
 app.use(require("./Route/Route"));
 
 app.engine(".hbs", engine({extname:'.hbs', defaultLayout:'main'}));
