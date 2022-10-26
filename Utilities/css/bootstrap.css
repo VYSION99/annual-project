@@ -3471,7 +3471,8 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
+  line-height: 4vh;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -3846,7 +3847,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color:azure;
+  color:white;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3918,7 +3919,11 @@ textarea.form-control-lg {
   flex-grow: 1;
   text-align: center;
 }
-
+.item{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  text-shadow: 4px 4px rgb(212, 245, 234);
+}
 .nav-fill .nav-item .nav-link,
 .nav-justified .nav-item .nav-link {
   width: 100%;
@@ -3963,10 +3968,11 @@ textarea.form-control-lg {
 .navbar-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
+  padding-left: 5vh  !important;
+  justify-self: center;
   margin-bottom: 0;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: space-between;line-height: 10vh;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -4322,6 +4328,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+
 }
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);

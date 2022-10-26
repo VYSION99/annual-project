@@ -26,3 +26,10 @@ body{
   box-shadow: inset 12px 8px rgba(25,0, 0.9,0.5),
           inset -4px -8px  12px rgba(25, 0,0.9, 0.1);
 }
+.card_des:hover{
+    background:black;
+    transform: translate(2px);
+    transition: 4s ease-in-out;
+    stop-opacity: calc(var(--bs-gutter-x)*10);
+    opacity:50%;
+}
