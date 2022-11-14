@@ -59,7 +59,7 @@ const LoadQuestion = () => {
   Answer4.innerText = maths[QuestionCount].d;
 };
 LoadQuestion();
-console.log(LoadQuestion());
+
 
 const getAnswer = () => {
     Answers.forEach((cunCheck) => {

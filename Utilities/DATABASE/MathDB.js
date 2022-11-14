@@ -270,13 +270,15 @@ const manuItem = async () => {
   ];
 
   return math;
+
+  
 };
 const resultPortal = `
           <div class="counter"></div>
           <div class="message"></div>
           <div class="scores"></div>
           <div class="try_agian">
-              <a href="/questionPortal" class="submit">TRY AGAIN</a>  
+              <a href="/questionPortal/mathematics" class="submit">TRY AGAIN</a>  
           </div> `;
 
 const QuesData = `<ul id="quesOption">
@@ -303,3 +305,17 @@ const QuesData = `<ul id="quesOption">
           <div class="bt">
           <button class="submit"  onclick="checkFun()">Next</button>
           </div>`;
+
+
+const Algebra =  [
+    {
+      questions: "Q1.Factorize completely  12x² − 3y² ",
+    a: "A. (12 - y)",
+    b: "B. (4x - y²)",
+    c: "C. 3(2x - y)",
+    d: "D. 3(2x - y)(2x + y)",
+    ans: "option2",
+    }
+  ]
+
+

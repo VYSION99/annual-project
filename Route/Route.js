@@ -48,6 +48,7 @@ if ((url = "/questionPortal/science")) {
     
 Router.get("/questionPortal/science", (req, res, next) => {
   res.render("sci", { layout: "Sci" });
+  
 });
    } catch (error) {
     res.send(error)
