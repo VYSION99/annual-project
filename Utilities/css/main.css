@@ -17,14 +17,15 @@ body{
  
 }
 .card_position{
-    display: grip; place-content: center; margin-top: 2vh !important;
+    display: grid; place-content: center; margin-top: 2vh !important;
     margin-left: calc(var(--bs-gutter-x)*-2.5) !important;
 }
 .card_des{
-    padding: 3vh;
+    padding: 1vh;
      border-radius:5vh;
   box-shadow: inset 12px 8px rgba(25,0, 0.9,0.5),
           inset -4px -8px  12px rgba(25, 0,0.9, 0.1);
+          height:32vh;
 }
 .card_des:hover{
     background:black;
@@ -32,4 +33,82 @@ body{
     transition: 4s ease-in-out;
     stop-opacity: calc(var(--bs-gutter-x)*10);
     opacity:50%;
+}
+.flagLogo{
+display:flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.credentials button{
+    outline: none;
+    border: none;
+    margin: 3vh;
+    border-radius: 1vh;
+    font-weight: bolder;
+    letter-spacing: 4px;;
+    padding:5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:transparent;
+}
+.logo{
+    width: 30%;
+    font-size: 5vh;
+    font-weight: bolder;
+    padding: 0;
+    letter-spacing: 5px !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.flag{
+    width: 85px;
+    padding: 0;
+    animation: theFlag 6s ease-in;
+    border-radius: 20vh;
+    
+}
+
+@keyframes theFlag{
+    0%{
+        width: 2px;
+        stroke-dashoffset: 401;
+border-radius: 5vh;
+border: 5px solid  rgb(226, 230, 15) ;
+opacity: 5%;
+}
+50%{
+    
+        transform: rotatey(120deg);
+        border-bottom: rgb(9, 240, 9);
+        border-top: rgb(235, 13, 124);
+        border-radius: 5vh;
+       background-color: aqua;
+opacity: 50%;
+    }
+    100%{
+        width:80px;
+        transform: rotatey(360deg);
+        border-radius: 2vh;
+        opacity:90%;
+        animation-play-state: paused;
+    }
+}
+/* styling the footer container*/
+.footImg{
+    display:flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: space-around;
+    color: white;
+    background:black;
+    list-style: none; opacity:40%;
+}
+.footList{
+    font-size: 4vh;
+    font-style: italic;
+    list-style: none;
+  
+}
+.copy{
+    text-align: center;
+    background-color: silver;
 }

@@ -7,13 +7,14 @@ body{
     background-position: center;
     background-color: #7fffd4;
     background-size: cover;
-    overflow: hidden;
+    position: relative;
+    overflow-x: hidden;
 }
 .main-content{
     display: grid;
     place-content: center;
-    margin: 7rem 2rem ;
-    background-color: aliceblue;
+    margin: 4rem 2rem ;
+    background-color: rgb(245, 249, 252);
     padding: 3rem 2rem;
     box-shadow: inset 6px 4px rgba(0,0, 0.9,0.5),
                 inset 12px 8px rgba(0,0, 0.9,0.2);
@@ -56,9 +57,12 @@ margin: 10px;
     color: antiquewhite;
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
-    border: 1px solid silver;
-    margin-top: 12vh;
-    margin-bottom: 4vh;
+    border: 1px solid rgb(7, 247, 235);
+    margin-top: 2vh;
+   padding: 0;
+   margin-left: 5vh;
+   text-align: center;
+   border-radius: 3vh;
 }
 .manu-container{
     width: 100%;
@@ -85,13 +89,89 @@ margin: 10px;
 .try_again a{
     float: right;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana,Tahoma, sans-serif;
     text-decoration: none;
 }
 .scx{
-margin-top: 3rem;
+margin-top: -5vh;
 margin-left: 5rem;
-width:10% !important;
+border-radius: 5vh;
+}
+.fixed-top{
+    position: relative !important;
+}
 
-
+.logo{
+    margin-left: 12vh;
+    margin-top: 1vh;
+    letter-spacing: 4px;
+    font-size: 4vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: code 15s infinite;
+}
+@keyframes code{
+    0%{
+        text-shadow:orangered 2px 3px;
+        color: rgb(13, 197, 173);
+        
+    }
+    50%{
+        text-overflow: ellipsis;
+        color: white;
+        border-radius: 5vh;
+        stroke: crimson;
+        stroke-dashoffset: 400;
+        stroke-dasharray: 300;
+        text-shadow:none;
+    }
+    100%{
+        color: rgb(9, 250, 49);
+        text-shadow:orangered 2px 3px;
+    }
+}
+.the{
+    position: absolute;
+    top:-2vh;
+    width:70px;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 7vh;
+    background: transparent;
+}
+@media(width:1280px){
+    .body{
+        overflow: hidden;
+    }
+}
+@media (width:287px){
+    .subtopic{
+        position: absolute;
+        left: 40%;
+    }
+    .nav{
+        width:100%;
+    }
+    .scx{
+         width:100%;
+         position: relative;
+    }
+    .body{
+        overflow: auto;
+    }
+    .main-content{
+        width:100%;
+         margin-top:5vh;
+         margin-left:5vh;
+         margin-right:5vh;
+    }
+    .header{
+       position: relative;
+       left: -5vh;
+       top: 0;
+       z-index: 2000;
+       margin: 3vh;
+       text-align: center;
+        
+    }
 }
